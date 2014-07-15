@@ -1,0 +1,42 @@
+---
+title: Buffers
+---
+
+# Buffers
+
+Buffers allow for connections between different item and liquid transportation systems. As an example, you can convert from Thermal Expansion Itemducts to a Buildcraft pipe by placing a buffer between. They will not spit items on the ground.
+
+### The Default Buffer
+Can be crafted with `i` standing for an iron ingot, `g` standing for glass panes, and `e` standing for ender pearls:
+
+```
+igi
+geg
+igi
+```
+
+This variant has no GUI, and simply passes items through itself to the same direction that the items came in from, or to another direction if the direction it came from does not exist.
+
+### The Advanced Buffer
+Can be crafted with `r` standing for redstone blocks, and `b` standing for the default buffer:
+
+```
+r r
+ b
+r r
+```
+
+Can prioritize item outputs, and has two modes: Greedy and Round robin. A lower number means a higher priority.
+   - Greedy outputs only to the side with the highest priority.
+   - Round robin spreads items to all valid outputs, and ignores priorities.
+
+### The Filtered Buffer
+Can be crafted with `g` standing for gold ingots, and `b` standing for the default buffer:
+
+```
+g g
+ b
+g g
+```
+
+Can [Filter](filtering.html) what items it will allow through, using the normal [filtering](filtering.html) GUI.

@@ -1,0 +1,125 @@
+---
+title: Relocators
+---
+
+# Relocators (1.0.5)
+
+### Work In Progress
+Note that relocators are still under heavy work, many modules are being added fairly quickly, so this wiki may not always be able to be kept up to date.
+
+## The Relocator
+
+Read as: `i` is Iron ingot, `g` is glass pane.
+
+```
+igi
+g g
+igi
+```
+
+A relocator is a pipe that intelligently routes items within it. It can accept items from most other item transportation systems, and functions much like a [buffer](buffers.html). It has the ability to be much more than a buffer, with modules applied to it.
+
+The Relocator will never throw items on the ground, if the whole piping system is made out of relocators. Combining other item transportation systems may cause items to fall on the ground, as relocators will not accept items with no possible destination.
+
+### Modules
+Relocator modules are applied to the connections between relocators. They are applied by right clicking this connection, and can be removed by shift-right clicking.
+
+All modules are created using the `Module Base` item. The module base item is always stood for as `B` in crafting recipes on this page.
+
+The module base item is crafted as follows, with `i` standing for iron ingots and `b` standing for iron bars.
+
+```
+ibi
+b b
+ibi
+```
+
+#### Module Filter
+Is crafted as follows: (with `g` standing for gold ingots)
+
+```
+g g
+ B
+g g
+```
+
+The Filter module allows relocators to filter the items they send through using the default [filtering](filtering.html) GUI.
+
+#### Module One Way
+Is crafted as follows, with `i` standing for iron bars:
+
+```
+i i
+ B
+i i
+```
+
+The One Way module allows items to flow through the relocator only one way, which is the way that the arrow points. The direction of item flow can be toggled by applying a redstone signal.
+
+#### Modules Extraction and Blocked Extraction
+The Extraction group of modules both extract from the inventory they are placed against, but the blocked extraction module also does not allow items to enter that inventory.
+
+Are crafted as follows (the two on the right are the blocked variant, `b` is an redstone block, `i` is an iron bar, `m` is the regular extraction module, `o` is the one way module)
+
+```
+b b    b b     i i
+ B      m       o
+b b    b b     i i
+```
+
+#### Module Sneaky
+(`l` is lapis lazuli)
+
+```
+l l
+ B
+l l
+```
+
+The sneaky module lets items be inserted from another side of the inventory, not the side that relocator is connected to.
+
+#### Module Stock
+(`e` is a ender pearl)
+
+```
+e e
+ B
+e e
+```
+
+This module has a GUI of 9 slots, and allows the user to set an amount of items to keep in an inventory. For example, you can specify to always keep 64 stone in that inventory, and then whenever stone gets routed their, it will not allow more than 64 stone to arrive in the inventory. You cannot keep more than 64 items per slot in the GUI, so you are limited to keeping 9 stacks of items in the inventory.
+
+#### Module Redstone Block
+(`c` is a comparator, `d` is redstone dust)
+
+```
+c d
+ B
+d c
+```
+
+This module allows you to control if items can pass a connection depending on redstone signal. If the signal is on, the items cannot pass, if the signal is off, the items can pass.
+
+The functionality of this module can be reversed by right clicking. The reversed functionality allows items through only on high redstone signal.
+
+#### Module Spread
+(`g` is glowstone dust)
+
+```
+g g
+ B
+g g
+```
+
+This module spreads inputted items across an inventory, just like the spread feature on the Advanced (or Higher tier) [[block extenders]]. The inventory will contain balanced stacks of each item.
+
+#### Module Item Detector
+(`r` is for redstone dust, `R` is for redstone torch)
+
+```
+r r
+ B
+R R
+```
+
+Detects items that match a filter, outputs a 1 tick redstone pulse. Also changes texture.

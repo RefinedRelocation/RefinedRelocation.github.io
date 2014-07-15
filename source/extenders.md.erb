@@ -1,0 +1,80 @@
+---
+title: Block Extenders
+---
+
+## Block Extenders
+
+The Block Extenders come in 5 variants: the [regular](#regular-block-extender), [advanced](#advanced-block-extender), [filtered](#filtered-block-extender), [advanced filtered](#advanced-filtered-block-extender), and [wireless](#wireless-block-extender) variant.
+
+If the user has [WAILA](http://www.minecraftforum.net/topic/1846244-172-waila-152/) installed, the WAILA highlight tooltip will show what the block extender is connected to, which way it is facing, and the block extenders redstone state.
+
+All block extenders **except for the wireless variant (See Issue [#20](https://github.com/Dynious/RefinedRelocation/issues/20))** can transmit redstone signals, and this functionality can be toggled by right clicking the block extender while shifting.
+
+### Regular Block Extender
+The regular block extender is crafted as shown below, where `i` stands for Iron Ingot, `o` stands for obsidian, `g` stands for glass pane, and `e` stands for ender pearl.
+
+```
+IGI
+GEG
+IOI
+```
+
+The regular version of a block extender allows basic extension of blocks. To use, it must be placed on an inventory by shift-right clicking the inventory. Once placed, it will transfer items, fluid, and energy to the connected block. The connected block face can be [disguised](#disguising).
+
+### Advanced Block Extender
+Can be crafted as follows, where `r` stands for redstone blocks and `b` stands for the regular block extender.
+
+```
+r r
+ b
+r r
+```
+
+This upgrade adds these features:
+- Spreading of items across inventory (instead of placing all items in first available slot)
+- Specify which side of inventory should be output to when inputting from specific side of Block Extender.
+- Stack Size function sets how many items to put into each available slot of the inventory connected. A setting of 8 will produce stacks of 8 inside the inventory.
+
+### Filtered Block Extender
+Can be crafted as shown, where `g` stands for Gold ingots and `b` stands for the regular block extender:
+
+```
+g g
+ b
+g g
+```
+
+This upgrade adds these features:
+
+ - Adds the ability to be [disguised](#disguised).
+ - The [Filtering](filtering.html) functionality.
+
+### Advanced Filtered Block Extender
+The advanced filtered block extender can be crafted exactly like the filtered and advanced, just using the advanced/filtered block extender in place of the regular block extender, and upgrading that with the other block extender's crafting recipe's materials.
+
+This upgrade adds these features:
+
+ * All of the Advanced Block Extender's features.
+ * All of the Filtered Block Extender's features.
+ * [Filtering](filtering.html) only on insertion, or both insertion and extraction.
+
+### Wireless Block Extender
+Can be crafted by this recipe, where `d` stands for diamond and `b` stands for the advanced filtered block extender.
+
+```
+d d
+ b
+d d
+```
+
+The wireless block extender is an upgrade of the Advanced Filtered block extender.
+This upgrade allows the user to use the block extender wirelessly, at a default limit of 16 blocks. This limit is configurable. To set the block being extended, the user should right click a block and then right click the block extender.
+
+This upgrade adds these features:
+
+ * Wireless functionality, up to 16 blocks.
+ * Contains the Advanced Filtered Block Extender's functionality.
+ * **Does not allow [disguising](#disguising) the block.**
+
+#### Disguising
+Disguising allows the connected side (the side with the obsidian texture) of the block extender to appear like any full block. This is done by right, clicking on any full and then right clicking the block extender, with a [Linker](misc.html#the-linker).

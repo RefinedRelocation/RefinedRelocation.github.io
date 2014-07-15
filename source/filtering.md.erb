@@ -1,0 +1,19 @@
+---
+title: Filtering
+---
+
+# Filters
+
+In all instances of filters, Refined Relocation uses a common GUI.
+
+The filter allows both whitelisting and blacklisting, but not at the same time. An empty blacklist means that any item can pass through, while an empty whitelist will stop all items from passing through.
+
+A list of default presets is in a scrollable list, as well as a list of all creative tabs.
+
+Custom filters can be specified, and match on:
+
+ - Use `*` for wildcard lookup, so `*ore` will match `Iron Ore`, `Core`, etc.
+  - Note that `core` is matched when `*ore` is the filter.
+ - Use `!` for ore dictionary lookup, as a prefix.
+
+Custom filters can be separated by commas, and ignore capitalization.
