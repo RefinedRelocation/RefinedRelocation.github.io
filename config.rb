@@ -74,9 +74,9 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 activate :deploy do |deploy|
-    deploy.method = :git,
+    deploy.method = :git
     deploy.branch = "master"
-    deploy.commit_message = `git log -1 --pretty=%B`
+    deploy.commit_message = "Deploy source to pages with " << `git rev-parse HEAD` # git rev-parse HEAD returns the last commit hash.
 end
 
 # Build-specific configuration
