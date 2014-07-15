@@ -93,3 +93,25 @@ activate :deploy do |deploy|
     deploy.branch = "master"
     deploy.commit_message = "Deploy source to pages with " << `git rev-parse HEAD` # git rev-parse HEAD returns the last commit hash.
 end
+
+# Build-specific configuration
+configure :build do
+   # For example, change the Compass output style for deployment
+   activate :minify_css
+
+   # Minify Javascript on build
+   activate :minify_javascript
+
+   activate :imageoptim do |options|
+
+   end
+
+   # Enable cache buster
+   # activate :asset_hash
+
+   # Use relative URLs
+   # activate :relative_assets
+
+   # Or use a different image path
+   # set :http_prefix, "/Content/images/"
+ end
