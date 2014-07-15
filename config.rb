@@ -65,12 +65,12 @@ helpers do
         for row in crafting do
             html << '<tr>'
             for item in row.split("") do
-                html << '<td>' << link_to(image_tag('crafting_images/all_vanilla/' << items[item][1] << '.png'), 'http://minecraft.gamepedia.com/' << items[item][1]) << '</td>'
+                html << '<td>' << link_to(image_tag('crafting_images/all_vanilla/' << items[item][1] << '.png', :title => items[item][0]), 'http://minecraft.gamepedia.com/' << items[item][1]) << '</td>'
             end
             html << '</tr>'
         end
         html << '</table>'
-        html << image_tag('arrow-facing-right.png', :class => 'crafting_arrow') << '<div class="crafting_output">' << image_tag('crafting_images/all_refined_relocation' << output[0] << '.png') << '</div>'
+        html << image_tag('arrow-facing-right.png', :class => 'crafting_arrow') << '<div class="crafting_output">' << image_tag('crafting_images/all_refined_relocation' << output[0] << '.png', :title => output[0]) << '</div>'
         html << '</div>'
         return html
    end
@@ -102,9 +102,9 @@ configure :build do
    # Minify Javascript on build
    activate :minify_javascript
 
-   activate :imageoptim do |options|
-    options.pngcrush_options = { :chunks => [''], :fix => false }
-   end
+   # activate :imageoptim do |options|
+   #  options.pngcrush_options = { :chunks => [''], :fix => false }
+   # end
 
    # Enable cache buster
    # activate :asset_hash
