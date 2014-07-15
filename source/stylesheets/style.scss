@@ -6,11 +6,10 @@ html
 header
 {
     text-align: center;
-}
-
-header h1
-{
-    font-size: 3em;
+    h1
+    {
+        font-size: 3em;
+    }
 }
 
 a
@@ -18,18 +17,18 @@ a
     color: #4183C4;
 }
 
-.toc
+.toc // table of contents
 {
     float: right;
     background-color: white;
     border: 2px solid #eee;
     border-radius: 0.5em;
-    width: 20%;
-    margin: 0 auto;
+    margin: 0 0 1em 1em;
+
     ul
     {
         list-style-type: none;
-        padding: 0;
+        padding: 0 0.5em;
         margin: 0;
     }
     li
@@ -47,8 +46,8 @@ a
 .content
 {
     position: relative;
-    width: 50%;
     margin: 0 auto;
+    width: 75%;
     font-family: Helvetica;
     border: 2px solid #eee;
     padding: 2em;
