@@ -103,7 +103,7 @@ configure :build do
    activate :minify_javascript
 
    activate :imageoptim do |options|
-
+    options.pngcrush_options = { :chunks => [''], :fix => false }
    end
 
    # Enable cache buster
