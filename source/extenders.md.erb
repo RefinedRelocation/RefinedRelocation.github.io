@@ -19,6 +19,15 @@ GEG
 IOI
 ```
 
+<%= crafting_recipe(["igi", "geg", "ioi"],
+	{'i' => ['Iron Ingot', 'iron_ingot'],
+	 'o' => ['Obsidian', 'obsidian'],
+	 'g' => ['Glass Pane', 'glass'],
+	 'e' => ['Ender Pearl', 'ender_pearl']
+	},
+	['Block Extender', 'block_extender']
+) %>
+
 The regular version of a block extender allows basic extension of blocks. To use, it must be placed on an inventory by shift-right clicking the inventory. Once placed, it will transfer items, fluid, and energy to the connected block. The connected block face can be [disguised](#disguising).
 
 ### Advanced Block Extender
@@ -31,9 +40,10 @@ r r
 ```
 
 This upgrade adds these features:
-- Spreading of items across inventory (instead of placing all items in first available slot)
-- Specify which side of inventory should be output to when inputting from specific side of Block Extender.
-- Stack Size function sets how many items to put into each available slot of the inventory connected. A setting of 8 will produce stacks of 8 inside the inventory.
+
+ * Spreading of items across inventory (instead of placing all items in first available slot)
+ * Specify which side of inventory should be output to when inputting from specific side of Block Extender.
+ * Stack Size function sets how many items to put into each available slot of the inventory connected. A setting of 8 will produce stacks of 8 inside the inventory.
 
 ### Filtered Block Extender
 Can be crafted as shown, where `g` stands for Gold ingots and `b` stands for the regular block extender:

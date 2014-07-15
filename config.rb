@@ -59,6 +59,21 @@ helpers do
     end
     return html << '</ul>'
    end
+
+   def crafting_recipe(crafting, items, output)
+        html = '<div class="crafting_table"><table class="crafting_grid">'
+        for row in crafting do
+            html << '<tr>'
+            for item in row.split("") do
+                html << '<td>' << link_to(image_tag('crafting_images/all_vanilla/' << items[item][1] << '.png'), 'http://minecraft.gamepedia.com/' << items[item][1]) << '</td>'
+            end
+            html << '</tr>'
+        end
+        html << '</table>'
+        html << image_tag('arrow-facing-right.png', :class => 'crafting_arrow') << '<div class="crafting_output">' << image_tag('crafting_images/all_refined_relocation' << output[0] << '.png') << '</div>'
+        html << '</div>'
+        return html
+   end
 end
 
 set :markdown_engine, :kramdown
@@ -69,7 +84,7 @@ set :relative_links, true
 
 set :css_dir, 'stylesheets'
 
-set :js_dir, 'javascripts'
+set :js_dir, 'javascript'
 
 set :images_dir, 'images'
 
