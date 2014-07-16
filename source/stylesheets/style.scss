@@ -3,6 +3,11 @@ html
     color: rgb(51, 51, 51);
 }
 
+*
+{
+    box-sizing: border-box;
+}
+
 header
 {
     text-align: center;
@@ -64,12 +69,6 @@ h1, h2, h3, h4, h5, h6
     border-bottom: 1px solid #eee;
 }
 
-img:not(.crafting_arrow)
-{
-    width: 100%;
-    height: 100%;
-}
-
 pre
 {
     background-color: #f8f8f8;
@@ -96,39 +95,43 @@ code
 
 .crafting_table
 {
-    background-color: #c6c6c6;
+    $border-radius: 0.5em;
+
+    border-radius: $border-radius;
+    background-color: #D2D2D2;
     padding: 1em;
-    position: relative;
-    border: 5px groove #eee;
-    text-align: center;
-    display: table-cell;
-}
 
-.crafting_output
-{
-    display: inline-block;
-    border: 1px solid black;
-    padding: 0.5em;
-    width: 25px;
-    height: 25px;
-    transform: translateY(-50px);
-}
-
-.crafting_arrow
-{
-    margin: 0 1em;
-    transform: translateY(-50px);
-}
-
-.crafting_grid // table
-{
-    display: inline-block;
-    border-collapse: collapse;
-    td
+    .crafting_grid
     {
-        border: 1px solid black;
-        padding: 0.5em;
-        width: 25px;
-        height: 25px;
+        border-collapse: separate;
+        border-spacing: 0.5em;
+        tr:first-child>*:first-child { border-top-left-radius: $border-radius; }
+        tr:first-child>*:last-child { border-top-right-radius: $border-radius; }
+        tr:last-child>*:first-child { border-bottom-left-radius: $border-radius; }
+        tr:last-child>*:last-child { border-bottom-right-radius: $border-radius; }
+    }
+
+    .round_corners
+    {
+        border-radius: $border-radius;
+    }
+}
+
+.item_slot
+{
+    background-color: #bbb;
+    $size: 16px*2;
+    width: $size !important;
+    height: $size !important;
+    padding: 0.5em;
+
+    &:hover
+    {
+        background-color: #aaa;
+    }
+
+    a, img
+    {
+        width: $size; height: $size;
     }
 }

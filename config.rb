@@ -35,7 +35,7 @@
 activate :directory_indexes
 
 # Automatic image dimensions on image_tag helper
-activate :automatic_image_sizes
+# activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
 # configure :development do
@@ -61,17 +61,20 @@ helpers do
    end
 
    def crafting_recipe(crafting, items, output)
-        html = '<div class="crafting_table"><table class="crafting_grid">'
+        html = '<table class="crafting_table"><tr><td><table class="crafting_grid">'
         for row in crafting do
             html << '<tr>'
             for item in row.split("") do
-                html << '<td>' << link_to(image_tag('crafting_images/all_vanilla/' << items[item][1] << '.png', :title => items[item][0]), 'http://minecraft.gamepedia.com/' << items[item][1]) << '</td>'
+                html << '<td class="item_slot">' << link_to(image_tag('crafting_images/all_vanilla/' << items[item][1] << '.png', :title => items[item][0]), 'http://minecraft.gamepedia.com/' << items[item][1]) << '</td>'
             end
             html << '</tr>'
         end
-        html << '</table>'
-        html << image_tag('arrow-facing-right.png', :class => 'crafting_arrow') << '<div class="crafting_output">' << image_tag('crafting_images/all_refined_relocation' << output[0] << '.png', :title => output[0]) << '</div>'
-        html << '</div>'
+
+        html << '</table></td>'
+
+        html << '<td><table><tr><td class="item_slot round_corners">' << link_to(image_tag('crafting_images/all_refined_relocation/' << output[1] << '.png', :title => output[0]), 'http://minecraft.gamepedia.com/' << output[1]) << '</td></tr></table></td>'
+
+        html << '</tr></table>'
         return html
    end
 end
