@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					},
+					{
+						"displayName": "Blaze Rod",
+						"wikiLink": "http://minecraft.gamepedia.com/Blaze_Rod"
+					},
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					}
+				],
+				[
+					{
+						"displayName": "Ender Pearl",
+						"wikiLink": "http://minecraft.gamepedia.com/Ender_Pearl"
+					},
+					{
+						"displayName": "Diamond",
+						"wikiLink": "http://minecraft.gamepedia.com/Diamond"
+					},
+					{
+						"displayName": "Ender Pearl",
+						"wikiLink": "http://minecraft.gamepedia.com/Ender_Pearl"
+					}
+				],
+				[
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					},
+					{
+						"displayName": "Fire Charge",
+						"wikiLink": "http://minecraft.gamepedia.com/Fire_Charge"
+					},
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Player Relocator",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

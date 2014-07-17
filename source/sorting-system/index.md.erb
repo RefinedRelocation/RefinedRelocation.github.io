@@ -1,0 +1,28 @@
+---
+title: The Sorting System
+---
+
+Refined Relocation's sorting system allows the user to configure chests to accept certain items, using the <%= link("filtering", "filter") %> system.
+
+### Sorting system
+The sorting system allows a user to shift-right click on any sorting chest and configure what items should be allowed in that chest. The configuration uses the default [filtering](filtering.html) GUI, but with an additional priority button. The priority can be set to:
+
+ * Low (-)
+ * Normal-Low (-0)
+ * Normal (0)
+ * Normal-High (0+)
+ * High (+)
+
+The priorities are listed in order from least to greatest, and is used when deciding where an item should be placed. Blacklisted chests have a lower priority than whitelisted chests, even if their priority setting is the same. If two inventories with identical filters and priorities are created, the items will go to the closest inventory from the sorting inventory that was placed into.
+
+To use the sorting system, set the filter for multiple inventories (at least 2) and then use <%= link("relocators", "relocator") %> or another item transportation system to import items into the network. If you do not have access to an item transportation system, then you can manually insert items to be sorted. If no inventory in the network can accept the items, they will be placed in the chest they were placed in.
+
+### Mod Compatibility
+
+* JABBA Better Barrels can be upgraded into Sorting Barrels, and they have Normal-High priority, and no filter due to only accepting the item placed in them.
+* Metallurgy chests (Sorting chest version)
+* Iron Chests' chests (Sorting chest version)
+* Equivalent Exchange's Alchemical Chests (Sorting chest version)
+
+### Disguising
+Disguising allows the Sorting importer, interface, and connector to appear like any non tile entity block. This is done by, shift-right clicking on any full block and then right clicking the Sorting block, with a [Linker](misc.html#the-linker).

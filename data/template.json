@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Obsidian",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				]
+			],
+			"output": {
+				"displayName": "",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

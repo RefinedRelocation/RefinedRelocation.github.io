@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					},
+					{
+						"displayName": "Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone"
+					},
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					}
+				],
+				[
+					{
+						"displayName": "Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone"
+					},
+					{
+						"displayName": "Block of Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Block_of_Redstone"
+					},
+					{
+						"displayName": "Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone"
+					}
+				],
+				[
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					},
+					{
+						"displayName": "Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone"
+					},
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Power Limiter",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

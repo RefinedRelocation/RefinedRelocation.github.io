@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					},
+					{
+						"displayName": "Stick",
+						"wikiLink": "http://minecraft.gamepedia.com/Stick"
+					},
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					}
+				],
+				[
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					},
+					{
+						"displayName": "",
+						"wikiLink": ""
+					},
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					}
+				],
+				[
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					},
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					},
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Toolbox",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

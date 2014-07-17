@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Hopper",
+						"wikiLink": "http://minecraft.gamepedia.com/Hopper"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Filtering Hopper",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

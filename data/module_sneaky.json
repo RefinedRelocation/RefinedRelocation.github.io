@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Lapis Lazuli",
+						"wikiLink": "http://minecraft.gamepedia.com/Lapis_Lazuli"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Lapis Lazuli",
+						"wikiLink": "http://minecraft.gamepedia.com/Lapis_Lazuli"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Module Base",
+						"wikiLink": ""
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "Lapis Lazuli",
+						"wikiLink": "http://minecraft.gamepedia.com/Lapis_Lazuli"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Lapis Lazuli",
+						"wikiLink": "http://minecraft.gamepedia.com/Lapis_Lazuli"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Module Sneaky",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

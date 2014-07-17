@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Module Base",
+						"wikiLink": ""
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Module Filter",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

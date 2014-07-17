@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Module Base",
+						"wikiLink": ""
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "Redstone Torch",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone_Torch"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Redstone Torch",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone_Torch"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Module Item Detector",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

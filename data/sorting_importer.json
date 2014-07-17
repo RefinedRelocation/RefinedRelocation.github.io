@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					},
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					},
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					}
+				],
+				[
+					{
+						"displayName": "Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone"
+					},
+					{
+						"displayName": "Sorting Connector",
+						"wikiLink": ""
+					},
+					{
+						"displayName": "Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone"
+					}
+				],
+				[
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					},
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_ingot"
+					},
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Sorting Importer",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

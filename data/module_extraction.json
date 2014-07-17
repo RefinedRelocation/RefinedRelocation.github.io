@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Block of Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Block_of_Redstone"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Block of Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Block_of_Redstone"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Module Base",
+						"wikiLink": ""
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "Block of Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Block_of_Redstone"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Block of Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Block_of_Redstone"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Module Extraction",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

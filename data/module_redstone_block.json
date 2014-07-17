@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Redstone Comparator",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone_Comparator"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Module Base",
+						"wikiLink": ""
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Redstone Comparator",
+						"wikiLink": "http://minecraft.gamepedia.com/Redstone_Comparator"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Module Redstone Block",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

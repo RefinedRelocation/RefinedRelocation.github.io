@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Glowstone Dust",
+						"wikiLink": "http://minecraft.gamepedia.com/Glowstone_Dust"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Glowstone Dust",
+						"wikiLink": "http://minecraft.gamepedia.com/Glowstone_Dust"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Module Base",
+						"wikiLink": ""
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "Glowstone Dust",
+						"wikiLink": "http://minecraft.gamepedia.com/Glowstone_Dust"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Glowstone Dust",
+						"wikiLink": "http://minecraft.gamepedia.com/Glowstone_Dust"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Module Spread",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

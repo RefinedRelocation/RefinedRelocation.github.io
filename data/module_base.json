@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					},
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					},
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					}
+				],
+				[
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					}
+				],
+				[
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					},
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					},
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Module Base",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

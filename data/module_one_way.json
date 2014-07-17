@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Module Base",
+						"wikiLink": ""
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Module One Way",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

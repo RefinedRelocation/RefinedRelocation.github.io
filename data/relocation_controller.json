@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Diamond",
+						"wikiLink": "http://minecraft.gamepedia.com/Diamond"
+					},
+					{
+						"displayName": "Eye of Ender",
+						"wikiLink": "http://minecraft.gamepedia.com/Eye_of_ender"
+					},
+					{
+						"displayName": "Diamond",
+						"wikiLink": "http://minecraft.gamepedia.com/Diamond"
+					}
+				],
+				[
+					{
+						"displayName": "Eye of Ender",
+						"wikiLink": "http://minecraft.gamepedia.com/Eye_of_ender"
+					},
+					{
+						"displayName": "Compass",
+						"wikiLink": "http://minecraft.gamepedia.com/Compass"
+					},
+					{
+						"displayName": "Eye of Ender",
+						"wikiLink": "http://minecraft.gamepedia.com/Eye_of_ender"
+					}
+				],
+				[
+					{
+						"displayName": "Diamond",
+						"wikiLink": "http://minecraft.gamepedia.com/Diamond"
+					},
+					{
+						"displayName": "Eye of Ender",
+						"wikiLink": "http://minecraft.gamepedia.com/Eye_of_ender"
+					},
+					{
+						"displayName": "Diamond",
+						"wikiLink": "http://minecraft.gamepedia.com/Diamond"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Relocation Controller",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

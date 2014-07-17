@@ -1,0 +1,106 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Module Extraction",
+						"wikiLink": ""
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Iron Bars",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_Bars"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Module Blocked Extraction",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		},
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Block of Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Block_of_Redstone"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Block of Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Block_of_Redstone"
+					}
+				],
+				[
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Module One Way",
+						"wikiLink": ""
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					}
+				],
+				[
+					{
+						"displayName": "Block of Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Block_of_Redstone"
+					},
+					{
+						"displayName": "",
+						"wikiLink": "http://minecraft.gamepedia.com/"
+					},
+					{
+						"displayName": "Block of Redstone",
+						"wikiLink": "http://minecraft.gamepedia.com/Block_of_Redstone"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Module Blocked Extraction",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}

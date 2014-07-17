@@ -121,8 +121,14 @@ a
 
 .text
 {
-    width: 75%;
+    max-width: 70%;
     padding: 2em;
+
+    img
+    {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 h1, h2, h3, h4, h5, h6
@@ -217,13 +223,5 @@ code
         height: $size;
         text-decoration: none;
     }
-}
-
-@keyframes spin {
-    $yRotation: 45deg;
-    $xRotation: 5deg;
-    $zRotation: 30deg;
-    from { transform: rotateY($yRotation) rotateZ($zRotation) rotateX($xRotation); }
-    to { transform: rotateY($yRotation) rotateZ($zRotation) rotateX($xRotation); }
 }
 

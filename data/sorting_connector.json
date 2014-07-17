@@ -1,0 +1,55 @@
+{
+	"recipes": [
+		{
+			"rows": [
+				[
+					{
+						"displayName": "Gold Nugget",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_Nugget"
+					},
+					{
+						"displayName": "Stone",
+						"wikiLink": "http://minecraft.gamepedia.com/Stone"
+					},
+					{
+						"displayName": "Gold Nugget",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_Nugget"
+					}
+				],
+				[
+					{
+						"displayName": "Stone",
+						"wikiLink": "http://minecraft.gamepedia.com/Stone"
+					},
+					{
+						"displayName": "Iron Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/Iron_ingot"
+					},
+					{
+						"displayName": "Stone",
+						"wikiLink": "http://minecraft.gamepedia.com/Stone"
+					}
+				],
+				[
+					{
+						"displayName": "Gold Nugget",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_Nugget"
+					},
+					{
+						"displayName": "Stone",
+						"wikiLink": "http://minecraft.gamepedia.com/Stone"
+					},
+					{
+						"displayName": "Gold Nugget",
+						"wikiLink": "http://minecraft.gamepedia.com/Gold_Nugget"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Sorting Connector",
+				"unlocalizedName": "RefinedRelocation:",
+				"meta": 0
+			}
+		}
+	]
+}
