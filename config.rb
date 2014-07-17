@@ -65,7 +65,11 @@ helpers do
             end
 
             children = resource.children
-            children = children.sort_by { |child| child.data.title || "" }
+            begin
+                children.sort_by! { |child| child.data.sort_order || children.length }
+            rescue
+                children.sort_by! { |child| child.data.title || "" }
+            end
 
             children.each do |child|
                 if !child.data.title
@@ -76,7 +80,7 @@ helpers do
 
                 if child.path.include?("index") # Is parent
                     checkedStr = ''
-                    if current_page.parent == child
+                    if current_page.parent == child || current_page == child
                         checkedStr = 'checked'
                     end
 
@@ -116,11 +120,11 @@ helpers do
 
    def crafting_recipe(crafting_recipe)
     html = '<table class="crafting_table"><tr class="crafting_name"><td colspan="4">' + (crafting_recipe["name"] || "Crafting Recipe") + '</td></tr><tr><td><table class="crafting_grid">'
-        for rowCounter in 1..3 do
-            row = crafting_recipe["row" + rowCounter.to_s]
+        for rowCounter in 0..2 do # 3 rows
+            row = crafting_recipe["rows"][rowCounter]
             if row != nil
               html << '<tr>'
-              for counter in 0..2 do
+              for counter in 0..2 do # 3 items pwer row
                 begin
                   if row[counter] != nil
                     html << '<td class="item_slot">' + link_to(row[counter]["displayName"], row[counter]["wikiLink"]) + '</td>'
@@ -163,6 +167,7 @@ set :images_dir, 'images'
 
 config[:links] = {
   'disguise' => "/block_extenders/block_extenders.html#disguising",
+  'filter' => "/filtering.html",
 
   'regular-block-extender' => "/block_extenders/block_extender_regular.html",
   'filtered-block-extender' => "/block_extenders/block_extender_filtered.html",

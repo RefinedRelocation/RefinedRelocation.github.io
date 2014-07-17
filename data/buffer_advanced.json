@@ -7,32 +7,30 @@
 						"displayName": "Redstone Block",
 						"wikiLink": "http://minecraft.gamepedia.com/redstone_block"
 					},
-
-					{},
-
+					{
+					},
 					{
 						"displayName": "Redstone Block",
 						"wikiLink": "http://minecraft.gamepedia.com/redstone_block"
 					}
 				],
 				[
-					{},
-
 					{
-						"displayName": "Regular Block Extender",
-						"wikiLink": "/block_extenders/block_extender_regular.html"
 					},
-
-					{}
+					{
+						"displayName": "Regular Buffer",
+						"wikiLink": "/buffers/buffer_regular.html"
+					},
+					{
+					}
 				],
 				[
 					{
 						"displayName": "Redstone Block",
 						"wikiLink": "http://minecraft.gamepedia.com/redstone_block"
 					},
-
-					{},
-
+					{
+					},
 					{
 						"displayName": "Redstone Block",
 						"wikiLink": "http://minecraft.gamepedia.com/redstone_block"
@@ -40,8 +38,8 @@
 				]
 			],
 			"output": {
-				"displayName": "Advanced Block Extender",
-				"unlocalizedName": "RefinedRelocation:blockExtender",
+				"displayName": "Advanced Buffer",
+				"unlocalizedName": "RefinedRelocation:buffer",
 				"meta": 1
 			}
 		}

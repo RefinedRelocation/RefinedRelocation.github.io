@@ -1,52 +1,95 @@
 {
 	"recipes": [
 		{
-			"row1": [
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Ender Pearl",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				}
-			],
-			"row2": [
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				}
-			],
-			"row3": [
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				}
+			"name": "Upgrade Option #1",
+			"rows": [
+				[
+					{
+						"displayName": "Redstone Block",
+						"wikiLink": "http://minecraft.gamepedia.com/redstone_block"
+					},
+
+					{},
+
+					{
+						"displayName": "Redstone Block",
+						"wikiLink": "http://minecraft.gamepedia.com/redstone_block"
+					}
+				],
+				[
+					{},
+
+					{
+						"displayName": "Filtered Block Extender",
+						"wikiLink": "/block_extenders/block_extender_filtered.html"
+					},
+
+					{}
+				],
+				[
+					{
+						"displayName": "Redstone Block",
+						"wikiLink": "http://minecraft.gamepedia.com/redstone_block"
+					},
+
+					{},
+
+					{
+						"displayName": "Redstone Block",
+						"wikiLink": "http://minecraft.gamepedia.com/redstone_block"
+					}
+				]
 			],
 			"output": {
-				"displayName": "Block Extender",
-				"unlocalizedName": "refinedrelocation:block_extender",
-				"meta": 0
+				"displayName": "Advanced Filtered Block Extender",
+				"unlocalizedName": "RefinedRelocation:blockExtender",
+				"meta": 3
+			}
+		},
+		{
+			"name": "Upgrade Option #2",
+			"rows": [
+				[
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/gold_ingot"
+					},
+
+					{},
+
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/gold_ingot"
+					}
+				],
+				[
+					{},
+
+					{
+						"displayName": "Advanced Block Extender",
+						"wikiLink": "/block_extenders/block_extender_advanced.html"
+					},
+
+					{}
+				],
+				[
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/gold_ingot"
+					},
+
+					{},
+
+					{
+						"displayName": "Gold Ingot",
+						"wikiLink": "http://minecraft.gamepedia.com/gold_ingot"
+					}
+				]
+			],
+			"output": {
+				"displayName": "Advanced Filtered Block Extender",
+				"unlocalizedName": "RefinedRelocation:blockExtender",
+				"meta": 3
 			}
 		}
 	]

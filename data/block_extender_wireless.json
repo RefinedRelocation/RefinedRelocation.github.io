@@ -1,52 +1,50 @@
 {
 	"recipes": [
 		{
-			"row1": [
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Ender Pearl",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				}
-			],
-			"row2": [
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				}
-			],
-			"row3": [
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				},
-				{
-					"displayName": "Iron Ingot",
-					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
-				}
+			"rows": [
+				[
+					{
+						"displayName": "Diamond",
+						"wikiLink": "http://minecraft.gamepedia.com/diamond"
+					},
+					{
+					},
+					{
+						"displayName": "Diamond",
+						"wikiLink": "http://minecraft.gamepedia.com/diamond"
+					}
+				],
+				[
+					{
+						"displayName": "Diamond",
+						"wikiLink": "http://minecraft.gamepedia.com/diamond"
+					},
+					{
+						"displayName": "Advanced Filtered Block Extender",
+						"wikiLink": "/block_extenders/block_extender_advanced_filtered.html"
+					},
+					{
+						"displayName": "Diamond",
+						"wikiLink": "http://minecraft.gamepedia.com/diamond"
+					}
+				],
+				[
+					{
+						"displayName": "Diamond",
+						"wikiLink": "http://minecraft.gamepedia.com/diamond"
+					},
+					{
+					},
+					{
+						"displayName": "Diamond",
+						"wikiLink": "http://minecraft.gamepedia.com/diamond"
+					}
+				]
 			],
 			"output": {
 				"displayName": "Block Extender",
 				"unlocalizedName": "refinedrelocation:block_extender",
-				"meta": 0
+				"meta": 4
 			}
 		}
 	]

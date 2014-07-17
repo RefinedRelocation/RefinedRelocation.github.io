@@ -7,32 +7,30 @@
 						"displayName": "Gold Ingot",
 						"wikiLink": "http://minecraft.gamepedia.com/gold_ingot"
 					},
-
-					{},
-
+					{
+					},
 					{
 						"displayName": "Gold Ingot",
 						"wikiLink": "http://minecraft.gamepedia.com/gold_ingot"
 					}
 				],
 				[
-					{},
-
 					{
-						"displayName": "Regular Block Extender",
-						"wikiLink": "/block_extenders/block_extender_regular.html"
 					},
-
-					{}
+					{
+						"displayName": "Regular Buffer",
+						"wikiLink": "/buffers/buffer_regular.html"
+					},
+					{
+					}
 				],
 				[
 					{
 						"displayName": "Gold Ingot",
 						"wikiLink": "http://minecraft.gamepedia.com/gold_ingot"
 					},
-
-					{},
-
+					{
+					},
 					{
 						"displayName": "Gold Ingot",
 						"wikiLink": "http://minecraft.gamepedia.com/gold_ingot"
@@ -40,8 +38,8 @@
 				]
 			],
 			"output": {
-				"displayName": "Filtered Block Extender",
-				"unlocalizedName": "RefinedRelocation:blockExtender",
+				"displayName": "Buffer Filtered",
+				"unlocalizedName": "RefinedRelocation:buffer",
 				"meta": 2
 			}
 		}
