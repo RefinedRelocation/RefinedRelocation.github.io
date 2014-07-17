@@ -50,32 +50,102 @@ helpers do
 
    def sitemapGen()
     html = '<ul>'
-    html << '<li class="toc-header">Pages</li>'
-    resources = sitemap.resources.sort_by { |resource| resource.data["title"] or "" }
-    for resource in resources
-      if resource.ext == '.html'
-        html << '<li>' << link_to(resource.data['title'], resource.url) << '</li>'
-      end
-    end
+    html << "<li class='header'>Pages</li>"
+    html << getListElementForResource(sitemap.find_resource_by_destination_path("/index.html"))
+    html << getSitemapForResource(sitemap.find_resource_by_destination_path("/index.html"))
     return html << '</ul>'
    end
 
-   def crafting_recipe(crafting, items, output)
-        html = '<table class="crafting_table"><tr><td><table class="crafting_grid">'
-        for row in crafting do
-            html << '<tr>'
-            for item in row.split("") do
-                html << '<td class="item_slot">' << link_to(image_tag('crafting_images/all_vanilla/' << items[item][1] << '.png', :title => items[item][0]), 'http://minecraft.gamepedia.com/' << items[item][1]) << '</td>'
+    def getSitemapForResource(resource)
+        html = ''
+
+        if resource.children.length > 0
+            if resource.url != "/"
+                html << '<ul>'
             end
-            html << '</tr>'
+
+            children = resource.children
+            children = children.sort_by { |child| child.data.title || "" }
+
+            children.each do |child|
+                if !child.data.title
+                    next
+                end
+                childHtml = getSitemapForResource(child)
+                html << '<li>'
+
+                if child.path.include?("index") # Is parent
+                    checkedStr = ''
+                    if current_page.parent == child
+                        checkedStr = 'checked'
+                    end
+
+                    html << "<input #{checkedStr} type='checkbox' id='checkbox_#{child.path}' />"
+                    html << "<label for='checkbox_#{child.path}'>#{getResourceLink(child)}</label>"
+                else
+                    html << link_to(child.data.title, child.url)
+                end
+
+                html << childHtml
+                html << '</li>'
+            end
+
+            if resource.url != "/"
+                html << '</ul>'
+            end
         end
 
-        html << '</table></td>'
+        return html == "<ul></ul>" ? "" : html # Checks if all children were skipped
+    end
 
-        html << '<td><table><tr><td class="item_slot round_corners">' << link_to(image_tag('crafting_images/all_refined_relocation/' << output[1] << '.png', :title => output[0]), 'http://minecraft.gamepedia.com/' << output[1]) << '</td></tr></table></td>'
+  def getListElementForResource(resource)
+    return '<li>' << getResourceLink(resource) << '</li>'
+  end
 
-        html << '</tr></table>'
+  def getResourceLink(resource)
+    return link_to(!resource.data['title'] ? resource.path : resource.data['title'], resource.url);
+  end
+
+  def generate_recipes(crafting_recipes)
+    html = ''
+    for recipe in crafting_recipes["recipes"] do
+      html << crafting_recipe(recipe)
+    end
+    return html
+  end
+
+   def crafting_recipe(crafting_recipe)
+    html = '<table class="crafting_table"><tr class="crafting_name"><td colspan="4">' + (crafting_recipe["name"] || "Crafting Recipe") + '</td></tr><tr><td><table class="crafting_grid">'
+        for rowCounter in 1..3 do
+            row = crafting_recipe["row" + rowCounter.to_s]
+            if row != nil
+              html << '<tr>'
+              for counter in 0..2 do
+                begin
+                  if row[counter] != nil
+                    html << '<td class="item_slot">' + link_to(row[counter]["displayName"], row[counter]["wikiLink"]) + '</td>'
+                  end
+                rescue Exception => e
+                  html << '<td class="item_slot"></td>'
+                end
+              end
+              html << "</tr>"
+            end
+        end
+
+        html << "</table></td>"
+
+        html << "<td><table><tr><td class='crafting_arrow'></td></tr></table></td>"
+
+        html << "<td><table><tr><td class='item_slot round_corners'>" << link_to(crafting_recipe["output"]["displayName"]) << "</td></tr></table></td>"
+
+        html << "</tr></table>"
         return html
+   end
+
+   def link(link_content, link_id)
+    # return "<a href='#{links[link_id]}'>#{link_content}</a>"
+    return link_to(link_content, links[link_id])
    end
 end
 
@@ -90,6 +160,17 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascript'
 
 set :images_dir, 'images'
+
+config[:links] = {
+  'disguise' => "/block_extenders/block_extenders.html#disguising",
+
+  'regular-block-extender' => "/block_extenders/block_extender_regular.html",
+  'filtered-block-extender' => "/block_extenders/block_extender_filtered.html",
+  'advanced-block-extender' => "/block_extenders/block_extender_advanced.html",
+  'advanced-filtered-block-extender' => "/block_extenders/block_extender_advanced_filtered.html",
+  'wireless-block-extender' => "/block_extenders/block_extender_wireless.html",
+
+}
 
 activate :deploy do |deploy|
     deploy.method = :git

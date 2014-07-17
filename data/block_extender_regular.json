@@ -1,0 +1,53 @@
+{
+	"recipes": [
+		{
+			"row1": [
+				{
+					"displayName": "Iron Ingot",
+					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
+				},
+				{
+					"displayName": "Glass Pane",
+					"wikiLink": "http://minecraft.gamepedia.com/glass_pane"
+				},
+				{
+					"displayName": "Iron Ingot",
+					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
+				}
+			],
+			"row2": [
+				{
+					"displayName": "Glass Pane",
+					"wikiLink": "http://minecraft.gamepedia.com/glass_pane"
+				},
+				{
+					"displayName": "Ender Pearl",
+					"wikiLink": "http://minecraft.gamepedia.com/ender_pearl"
+				},
+				{
+					"displayName": "Glass Pane",
+					"wikiLink": "http://minecraft.gamepedia.com/glass_pane"
+				}
+			],
+			"row3": [
+				{
+					"displayName": "Iron Ingot",
+					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
+				},
+				{
+					"displayName": "Obsidian",
+					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
+				},
+				{
+					"displayName": "Iron Ingot",
+					"wikiLink": "http://minecraft.gamepedia.com/iron_ingot"
+				}
+			],
+			"output": {
+				"displayName": "Block Extender",
+				"unlocalizedName": "refinedrelocation:block_extender",
+				"meta": 0
+			}
+		}
+	]
+}

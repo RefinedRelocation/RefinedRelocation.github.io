@@ -3,7 +3,12 @@
     <head>
         <%= stylesheet_link_tag "style" %>
         <%= javascript_include_tag 'libs/prefixfree.min.js' %>
-        <title><%= current_page.data.title + " @ The RR Wiki" || "Refined Relocation Wiki" %></title>
+        <title><%= (current_page.data["title"] || "") + " @ The RR Wiki" || "Refined Relocation Wiki" %></title>
+
+        <% if (current_page.data["recipes"] != nil) %>
+        <% content_str = data[current_page.data["recipes"]]["recipes"][0]["output"]["unlocalizedName"] + "|" + data[current_page.data["recipes"]]["recipes"][0]["output"]["meta"].to_s %>
+        <META HTTP-EQUIV="Item" CONTENT="<%= content_str %>">
+        <% end %>
     </head>
     <body>
         <header>
@@ -14,6 +19,10 @@
                 <%= table_of_contents %>
             </section>
             <div class="text">
+                <h2><%= current_page.data["title"] || "No title!" %></h2>
+                <% if (data[current_page.data.recipes] != nil) %>
+                    <%= generate_recipes(data[current_page.data.recipes]) %>
+                <% end %>
                 <%= yield %>
             </div>
         </div>

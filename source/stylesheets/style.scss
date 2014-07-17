@@ -26,9 +26,16 @@ a
 {
     float: right;
     background-color: white;
-    border: 2px solid #eee;
-    border-radius: 0.5em;
-    margin: 0 0 1em 1em;
+    border-left: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    border-bottom-left-radius: 0.5em;
+    // margin: -2em -2em 1em 1em;
+
+    .header
+    {
+        font-weight: bold;
+        text-align: center;
+    }
 
     ul
     {
@@ -36,15 +43,66 @@ a
         padding: 0 0.5em;
         margin: 0;
     }
+
     li
     {
         padding: 0.5em;
-        border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
+        &:last-child
+        {
+            border-bottom: none;
+        }
     }
+
     a
     {
         text-decoration: none;
+    }
+
+    $arrow-size: 8px;
+    $arrow-color: #787878;
+    label
+    {
+        padding-left: 15px;
+        position: relative;
+        user-select: none;
+
+        &:before
+        {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 50%;
+            left: 0;
+            border-left: $arrow-size solid $arrow-color;
+            border-top: $arrow-size solid transparent;
+            border-bottom: $arrow-size solid transparent;
+            margin-top: -$arrow-size;
+        }
+
+    }
+
+    input[type=checkbox]:checked ~ label:before
+    {
+        border-left: $arrow-size solid transparent;
+        border-top: $arrow-size solid $arrow-color;
+        border-right: $arrow-size solid transparent;
+        margin-left: -$arrow-size/2;
+        margin-top: -$arrow-size/2;
+    }
+
+    input[type=checkbox] {
+        display: none;
+        &:checked ~ ul
+        {
+            display: block;
+        }
+
+        ~ ul
+        {
+            display: none;
+        }
     }
 }
 
@@ -55,13 +113,16 @@ a
     width: 75%;
     font-family: Helvetica;
     border: 2px solid #eee;
-    padding: 2em;
+    // padding: 2em;
     border-radius: 2em;
+
+    overflow: hidden; // clear:both fix
 }
 
 .text
 {
     width: 75%;
+    padding: 2em;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -99,16 +160,36 @@ code
 
     border-radius: $border-radius;
     background-color: #D2D2D2;
-    padding: 1em;
+    padding: 0.5em;
+    margin: 1em 0.5em;
+    border-collapse: separate;
+    border-spacing: 0.5em;
 
     .crafting_grid
     {
-        border-collapse: separate;
-        border-spacing: 0.5em;
         tr:first-child>*:first-child { border-top-left-radius: $border-radius; }
         tr:first-child>*:last-child { border-top-right-radius: $border-radius; }
+
         tr:last-child>*:first-child { border-bottom-left-radius: $border-radius; }
         tr:last-child>*:last-child { border-bottom-right-radius: $border-radius; }
+    }
+
+    .crafting_arrow
+    {
+        content: " ";
+        width: 0;
+        height: 0;
+        $arrow-size: 10px;
+        border-top: $arrow-size solid transparent;
+        border-bottom: $arrow-size solid transparent;
+
+        border-left: $arrow-size solid #787878;
+    }
+
+    .crafting_name
+    {
+        font-weight: bold;
+        text-align: center;
     }
 
     .round_corners
@@ -130,8 +211,19 @@ code
         background-color: #aaa;
     }
 
-    a, img
+    a
     {
-        width: $size; height: $size;
+        width: $size;
+        height: $size;
+        text-decoration: none;
     }
 }
+
+@keyframes spin {
+    $yRotation: 45deg;
+    $xRotation: 5deg;
+    $zRotation: 30deg;
+    from { transform: rotateY($yRotation) rotateZ($zRotation) rotateX($xRotation); }
+    to { transform: rotateY($yRotation) rotateZ($zRotation) rotateX($xRotation); }
+}
+
