@@ -59,6 +59,10 @@ helpers do
     def getSitemapForResource(resource)
         html = ''
 
+        if resource.data["no-toc"]
+            return ''
+        end
+
         if resource.children.length > 0
             if resource.url != "/"
                 html << '<ul>'
@@ -73,7 +77,7 @@ helpers do
             end
 
             children.each do |child|
-                if !child.data.title
+                if !child.data.title || resource.data["no-toc"]
                     next
                 end
                 childHtml = getSitemapForResource(child)
@@ -152,10 +156,33 @@ helpers do
         return html
    end
 
+   def favicon_gen
+       favicon = <<-FAVICON
+            <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png" />
+            <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+            <link rel="shortcut icon" href="favicon.png" />
+            <link rel="icon" type="image/ico" href="favicon.ico" />
+       FAVICON
+       return unindent(favicon)
+   end
+
+   def unindent(string)
+        indent = string.split("\n").select {|line| !line.strip.empty? }.map {|line| line.index(/[^\s]/) }.compact.min || 0
+        return string.gsub(/^[[:blank:]]{#{indent}}/, '')
+   end
+
    def link(link_content, link_id)
     # return "<a href='#{links[link_id]}'>#{link_content}</a>"
     return link_to(link_content, links[link_id])
    end
+
+    def octicon(code)
+        classes = "octicon octicon-#{code.to_s.dasherize}"# + options[:class]
+        content_tag :span, '', :class => classes
+    end
 end
 
 set :markdown_engine, :kramdown
