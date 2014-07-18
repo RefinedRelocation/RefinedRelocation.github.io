@@ -218,6 +218,8 @@ activate :deploy do |deploy|
     deploy.commit_message = "Deploy source to pages with " << `git rev-parse HEAD` # git rev-parse HEAD returns the last commit hash.
 end
 
+ignore 'stylesheets/octicons'
+
 # Build-specific configuration
 configure :build do
    # For example, change the Compass output style for deployment
