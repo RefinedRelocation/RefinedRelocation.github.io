@@ -1,52 +1,12 @@
-###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
-
-###
-# Helpers
-###
+require 'abbrev'
 
 activate :directory_indexes
 
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
-
 # Methods defined in the helpers block are available in templates
 helpers do
-   def table_of_contents
-     return sitemapGen()
-   end
+    def table_of_contents
+        return sitemapGen()
+    end
 
    def sitemapGen()
     html = '<ul>'
@@ -85,7 +45,7 @@ helpers do
 
                 if child.path.include?("index") && child.children.length > 0 # Is parent
                     checkedStr = ''
-                    if child == current_page || child.children.include?(current_page)
+                    if shouldBeChecked(child)
                         checkedStr = 'checked'
                     end
 
@@ -105,6 +65,15 @@ helpers do
         end
 
         return html == "<ul></ul>" ? "" : html # Checks if all children were skipped
+    end
+
+    def shouldBeChecked(resource)
+        dirs = [resource.path, current_page.path]
+
+        common_prefix = dirs.abbrev.keys.min_by {|key| key.length}.chop  # => "/home/user1/tmp/cove"
+        common_directory = common_prefix.sub(%r{/[^/]*$}, '')  # => "/home/user1/tmp"
+
+        return common_directory.length > 0
     end
 
   def getListElementForResource(resource)
