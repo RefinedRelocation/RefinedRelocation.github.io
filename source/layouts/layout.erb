@@ -14,26 +14,28 @@
         <% end %>
     </head>
     <body>
-        <header>
-            <% link_to '/index.html' do %>
-                <%= image_tag 'Refined-Relocation-Wiki-Banner.png', :class => 'rr-logo' %>
-            <% end %>
-        </header>
-        <div class="content">
-            <section class="toc">
-                <%= table_of_contents %>
-            </section>
-            <div class="text">
-                <%= current_page.data["notitle"] ? "" : '<h2>' + (current_page.data["title"] || "No title!") + '</h2>' %>
-                <%= yield %>
-                <% if (data[current_page.data.recipes] != nil) %>
-                    <%= generate_recipes(data[current_page.data.recipes]) %>
+        <div class="inner-body">
+            <header>
+                <% link_to '/index.html' do %>
+                    <%= image_tag 'Refined-Relocation-Wiki-Banner.png', :class => 'rr-logo' %>
                 <% end %>
+            </header>
+            <div class="content">
+                <section class="toc">
+                    <%= table_of_contents %>
+                </section>
+                <div class="text">
+                    <%= current_page.data["notitle"] ? "" : '<h2>' + (current_page.data["title"] || "No title!") + '</h2>' %>
+                    <%= yield %>
+                    <% if (data[current_page.data.recipes] != nil) %>
+                        <%= generate_recipes(data[current_page.data.recipes]) %>
+                    <% end %>
+                </div>
             </div>
         </div>
         <footer>
             <span class="float-left">Hosted by: <%= link_to("Pages", "http://pages.github.com", :class => 'github-pages-link') %></span>
-            <span class="float-right">&copy; <%= Date.today.year %></span>
+            <span class="float-right">&copy; <%= link_to('RefinedRelocation', 'http://github.com/refinedrelocation', :class => 'copy_link') %> <%= Date.today.year %></span>
         </footer>
     </body>
 </html>
