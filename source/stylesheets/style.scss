@@ -1,9 +1,11 @@
 @import "octicons/sprockets-octicons";
 
+$border-color: lighten(#282828, 2%);
+
 html,body
 {
     color: rgb(51, 51, 51);
-    background-color: lighten(#282828, 2%);
+    background-color: $border-color;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -15,7 +17,7 @@ html,body
 
 .inner-body
 {
-    background-image: linear-gradient(#d1d1d1, #adadad);
+    background-image: linear-gradient(white 60%, #adadad);
     margin: 2em;
     min-height: 55em;
     margin-bottom: 2em;
@@ -48,9 +50,8 @@ a
 .toc // table of contents
 {
     float: right;
-    background-color: white;
-    border-left: 2px solid #eee;
-    border-bottom: 2px solid #eee;
+    border-left: 2px solid $border-color;
+    border-bottom: 2px solid $border-color;
     border-bottom-left-radius: 0.5em;
     margin: 0 0 1.5em 1.5em;
 
@@ -74,7 +75,7 @@ a
     li
     {
         padding: 0.5em;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid $border-color;
         &:last-child
         {
             border-bottom: none;
@@ -128,7 +129,7 @@ a
     margin: 0 auto;
     width: 75%;
     font-family: Helvetica;
-    border: 2px solid #eee;
+    border: 2px solid $border-color;
     border-radius: 2em;
 
     overflow: hidden; // clear:both fix
