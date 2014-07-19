@@ -235,8 +235,7 @@ code
 
 footer
 {
-    background-color: #d1d1d1;
-    border-top: 3px #aaa;
+    color: white;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -255,19 +254,14 @@ footer
 
     .copy_link
     {
-        color: rgb(51, 51, 51);
+        color: white;
         text-decoration: none;
     }
 
     .github-pages-link
     {
-        color: black;
         text-decoration: none;
-        &:before
-        {
-            @extend .octicon, .octicon-mark-github;
-            padding-right: 5px;
-        }
+        color: white;
     }
 }
 
