@@ -20,7 +20,7 @@ html,body
     background-image: linear-gradient(white 60%, #adadad);
     margin: 2em;
     min-height: 55em;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
     margin-top: 0;
     padding-bottom: 3em;
     box-shadow: 0 0 1em 0.7em black;
@@ -241,7 +241,8 @@ footer
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0.5em;
+    padding: 0.5em 2.5em;
+    background-color: rgba(45,45,45,0.5);
 
     .float-left
     {
